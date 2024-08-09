@@ -1,0 +1,167 @@
+import { Prisma } from '@prisma/client';
+
+export const alumnos: Prisma.AlumnoCreateManyInput[] = [
+  {
+    name: 'Jose', 
+    last_name: 'Gomez',
+    email: 'jose@example.com',
+    carrera_id: 1,
+  },
+  {
+    name: 'Maria',
+    last_name: 'Perez',
+    email: 'marixE@example.com',
+    carrera_id: 2,
+  },
+  {
+    name: 'Carlos',
+    last_name: 'Lopez',
+    email: 'carlos@example.com',
+    carrera_id: 3,
+  },
+  {
+    name: 'Ana',
+    last_name: 'Martinez',
+    email: '_ana@example.com',
+    carrera_id: 1,
+  },
+  {
+    name: 'Luis',
+    last_name: 'Hernandez',
+    email: 'luisxx@example.com',
+    carrera_id: 2,
+  },
+  {
+    name: 'Luis',
+    last_name: 'fox',
+    email: 'luis90@example.com',
+    carrera_id: 2,
+  },
+  {
+    name: 'María',
+    last_name: 'Gómez',
+    email: 'mari@example.com',
+    carrera_id: 3,
+  },
+  {
+    name: 'Carlos',
+    last_name: 'Fernández',
+    email: 'carloss@example.com',
+    carrera_id: 4,
+  },
+  {
+    name: 'Ana',
+    last_name: 'Martínez',
+    email: 'anax@example.com',
+    carrera_id: 1,
+  },
+  {
+    name: 'Javier',
+    last_name: 'Pérez',
+    email: 'javier@example.com',
+    carrera_id: 5,
+  },
+  {
+    name: 'Lucía',
+    last_name: 'Rodríguez',
+    email: 'lucia@example.com',
+    carrera_id: 6,
+  },
+  {
+    name: 'Miguel',
+    last_name: 'López',
+    email: 'miguel@example.com',
+    carrera_id: 7,
+  },
+  {
+    name: 'Elena',
+    last_name: 'Sánchez',
+    email: 'elena@example.com',
+    carrera_id: 8,
+  },
+  {
+    name: 'Sergio',
+    last_name: 'García',
+    email: 'sergio@example.com',
+    carrera_id: 9,
+  },
+  {
+    name: 'Isabel',
+    last_name: 'Ruiz',
+    email: 'isabel@example.com',
+    carrera_id: 1,
+  },
+  {
+    name: 'Fernando',
+    last_name: 'Castro',
+    email: 'fernando@example.com',
+    carrera_id: 1,
+  },
+  {
+    name: 'Adriana',
+    last_name: 'Ramos',
+    email: 'adriana@example.com',
+    carrera_id: 2,
+  },
+  {
+    name: 'Pablo',
+    last_name: 'Morales',
+    email: 'pablo@example.com',
+    carrera_id: 3,
+  },
+  {
+    name: 'Carmen',
+    last_name: 'Torres',
+    email: 'carmen@example.com',
+    carrera_id: 4,
+  },
+  {
+    name: 'Diego',
+    last_name: 'Navarro',
+    email: 'diego@example.com',
+    carrera_id: 5,
+  },
+  {
+    name: 'Natalia',
+    last_name: 'Ortega',
+    email: 'natalia@example.com',
+    carrera_id: 6,
+  },
+  {
+    name: 'Raúl',
+    last_name: 'Vega',
+    email: 'raul@example.com',
+    carrera_id: 7,
+  },
+  {
+    name: 'Paula',
+    last_name: 'Méndez',
+    email: 'paulxa@example.com',
+    carrera_id: 8,
+  },
+  {
+    name: 'Alberto',
+    last_name: 'Guerrero',
+    email: 'albertox@example.com',
+    carrera_id: 9,
+  },
+  {
+    name: 'Sofía',
+    last_name: 'Molina',
+    email: 'sofi.a@example.com',
+    carrera_id: 4,
+  },
+  {
+    name: 'Marina',
+    last_name: 'Molina',
+    email: 'Mar@example.com',
+    carrera_id: 8,
+  },
+  {
+    name: 'Rebeca.',
+    last_name: 'Agundez',
+    email: 'REb@example.com',
+    carrera_id: 6,
+  },  
+    
+];

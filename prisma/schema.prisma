@@ -14,22 +14,28 @@ datasource db {
 }
 
 model Alumno {
-  id         Int     @id @default(autoincrement())
-  name       String
-  last_name  String
-  email      String  @unique
-  carrera    Carrera @relation(fields: [carrera_id], references: [id_carrera])
-  carrera_id Int
+  id             Int            @id @default(autoincrement())
+  name           String
+  last_name      String
+  email          String         @unique
+  grupo          String
+  turno          String
+  carrera        Carrera        @relation(fields: [carrera_id], references: [id_carrera])
+  carrera_id     Int
+  matricula      String         @unique @default("0")
   calificaciones Calificacion[]
 }
 
 model Materia {
-  id             Int           @id @default(autoincrement())
+  id             Int            @id @default(autoincrement())
+  semestre       Int
   nombre_materia String
-  profesor       Profesor      @relation(fields: [id_profe], references: [id])
-  id_profe       Int  
+  profesor       Profesor       @relation(fields: [id_profe], references: [id])
+  id_profe       Int
+  ordinario      Boolean
+  status         Boolean
+  periodo        String
   calificacion   Calificacion[]
-  
 }
 
 model Calificacion {
@@ -40,6 +46,7 @@ model Calificacion {
   alumno       Alumno  @relation(fields: [alumnoId], references: [id])
   alumnoId     Int
 }
+
 model Profesor {
   id        Int       @id @default(autoincrement())
   nombre    String

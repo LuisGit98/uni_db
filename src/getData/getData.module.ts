@@ -4,8 +4,9 @@ import { DbModule } from 'src/db/db.module';
 import { getDataService } from './getData.service';
 
 @Module({
-  controllers: [getDataController],
-  providers: [getDataService],
   imports: [DbModule],
+  providers: [getDataService],
+  controllers: [getDataController],
+  exports:[getDataModule]
 })
 export class getDataModule {}

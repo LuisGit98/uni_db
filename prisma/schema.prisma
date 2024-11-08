@@ -23,17 +23,16 @@ model Alumno {
   carrera        Carrera        @relation(fields: [carrera_id], references: [id_carrera])
   carrera_id     Int
   matricula      String         @unique @default("0")
+  semestre       Int
   calificaciones Calificacion[]
 }
 
 model Materia {
-  id             Int            @id @default(autoincrement())
-  semestre       Int
+  id             Int            @id @default(autoincrement())  
   nombre_materia String
   profesor       Profesor       @relation(fields: [id_profe], references: [id])
   id_profe       Int
   ordinario      Boolean
-  status         Boolean
   periodo        String
   calificacion   Calificacion[]
 }
@@ -60,4 +59,14 @@ model Carrera {
   carrera     String
   descripcion String
   Alumnos     Alumno[]
+  
+}
+
+model InfoMateria {
+  id_card      Int    @id @default(autoincrement())
+  calificacion Int
+  tipo         String
+  periodo      String
+  grupo        String
+  profesor     String
 }

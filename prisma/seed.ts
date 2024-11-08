@@ -11,17 +11,17 @@ async function main() {
   // await prisma.profesor.createMany({
   //   data: profes,
   // });
-  // await prisma.carrera.createMany({
-  //   data: carreras,
-  // });
-  
-  // await prisma.materia.createMany({
-  //   data: materias,
-  // });
-
+  await prisma.carrera.createMany({
+    data: carreras,
+  });
   // await prisma.alumno.createMany({
   //   data: alumnos,
   // });  
+  
+  await prisma.materia.createMany({
+    data: materias,
+  });
+
   
   await prisma.calificacion.createMany({
     data: cal,

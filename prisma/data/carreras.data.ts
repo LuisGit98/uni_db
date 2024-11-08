@@ -4,6 +4,7 @@ export const carreras: Prisma.CarreraCreateManyInput[] = [
   {
     carrera: 'Ciencias del agua',
     descripcion: 'Estudio de la naturaleza del elemento',
+    
   },
   {
     carrera: 'Ingeniería en Sistemas',
@@ -16,6 +17,7 @@ export const carreras: Prisma.CarreraCreateManyInput[] = [
   {
     carrera: 'Medicina',
     descripcion: 'Estudio y tratamiento de enfermedades humanas.',
+
   },
   {
     carrera: 'Derecho',

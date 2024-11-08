@@ -7,10 +7,10 @@ export class authController {
 
     constructor(private auth: authService) {}
 
-    @Get('/index')
-    async index(@Param('')idALumno:string){
+    @Get('/index/:mat')
+    async index(@Param('mat')mat:string){
 
-        return 'index'        
+        return this.auth.infoSemCard(mat)       
     }
 
     @Post('/signIn')
